@@ -1,0 +1,149 @@
+/*Master styles */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap');
+</style>
+
+body{
+    font-family: "Aleo", sans-serif;
+    margin: 0px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*Nav Styles*/
+.nav {
+    font-family: "Aleo", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #808388, #172447);
+}
+
+.brand{
+    color: #fff;
+}
+
+.left{
+    display: flex;
+}
+
+.nav > .left > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link a{
+    color: #d8d8cf;
+    text-decoration: none;
+    transition: color 0.5s ;
+}
+
+.nav-link :hover {
+    border-bottom:1px solid black;
+}
+
+.nav-link a:hover {
+    color: black;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+    color: black !important;
+}
+/*Portfolio Syles*/
+.portfolio-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.portfolio-item{
+    position: relative;
+    border: solid 5px white;
+}
+
+.portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.img-text .subtitle{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+.img-text:hover .subtitle{
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(0%);
+}
+
+/*About*/
+.two-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image img{
+    width: 100%;
+    padding: .3em;
+}
+
+.profile-content{
+    padding: 30px;
+}
+
+.profile-content h1{
+    color: navy;
+}
+
+/*Contact me*/
+.contact-image img{
+    width: 100%;
+    padding: .3em;
+}
+
+.two-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-content{
+    padding: 30px;
+}
+
+.contact-content h1{
+    color: navy;
+}

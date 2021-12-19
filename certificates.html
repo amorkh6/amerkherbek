@@ -1,0 +1,126 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title> Portfolio </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+        <div class="container">         
+            <div class="nav">
+               <div class="left">
+                    <div class="nav-link">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-link active-nav-link">
+                      <a href="certificates.html">Certificates</a>
+                  </div>
+                    <div class="nav-link">
+                        <a href="about.html">About</a>
+                    </div>
+                    <div class="nav-link">
+                      <a href="contact.html">Contact Me</a>
+                  </div>
+               </div> 
+                 <div class="right">
+                   <div class="brand">
+                       <div>AMER KHER BEK</div>
+                   </div>        
+                 </div>
+           </div>
+        
+        
+         <div class="content">
+             <div class="portfolio-items">
+
+                <div class="portfolio-item">
+                   <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+
+                   <div class="img-text">
+                       <div class="subtitle">I graduated from 12th class in Syria, And I got 87.8 out of 100 
+                           After that I started chasing my dreams
+                       </div>
+                   </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+
+                  <div class="img-text">
+                      <div class="subtitle">I started some courses in coursera learning platform and I got my first certificate in programming fundementals
+                      </div>
+                  </div>
+               </div>
+
+                <div class="portfolio-item">
+                  <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+
+                  <div class="img-text">
+                      <div class="subtitle"> I've had another certificate in Programming foundations with HTML,CSS and JavaScript and now I am completing a course on responsive web development
+                      </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio10.jpg)"></div>
+  
+                    <div class="img-text">
+                        <div class="subtitle"> Certificate in the basics of CSS3.
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="portfolio-item">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio11.jpg)"></div>
+  
+                    <div class="img-text"> 
+                        <div class="subtitle">  Certificate in Advanced Styling With Responsive Design.
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="portfolio-item">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio12.jpg)"></div>
+  
+                    <div class="img-text">
+                        <div class="subtitle"> Certificate in the basics of HTML5.
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="portfolio-item">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio13.jpg)"></div>
+  
+                    <div class="img-text">
+                        <div class="subtitle"> Certificate in interactivity with JavaScript.
+                        </div>
+                    </div>
+                  </div>
+
+
+               </div>
+
+          </div>
+        </div>
+        
+
+    </body>
+
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item')
+
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+               portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+
+            portfolioItem.addEventListener('mouseout', () => {
+               portfolioItem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+   </script>
+
+</html>
+
+</html>

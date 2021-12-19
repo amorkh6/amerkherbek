@@ -1,0 +1,108 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title> Portfolio </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+     <div class="container">         
+          <div class="nav">
+             <div class="left">
+                  <div class="nav-link active-nav-link">
+                      <a href="index.html">Home</a>
+                  </div>
+                  <div class="nav-link">
+                    <a href="certificates.html">Certificates</a>
+                </div>
+                  <div class="nav-link">
+                      <a href="about.html">About</a>
+                  </div>
+                  <div class="nav-link">
+                    <a href="contact.html">Contact Me</a>
+                </div>
+             </div> 
+               <div class="right">
+                 <div class="brand">
+                     <div>AMER KHER BEK</div>
+                 </div>        
+               </div>
+         </div>
+
+          <div class="content">
+              <div class="portfolio-items">
+
+                 <div class="portfolio-item">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+
+                    <div class="img-text">
+                        <div class="subtitle">I did some projects on Codepen like an Image filter changer.
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="portfolio-item">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+
+                    <div class="img-text">
+                        <div class="subtitle">I worked as a volunteer for I am an engineer company in UAE and I wrote some articles about programming .
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="portfolio-item">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+
+                    <div class="img-text">
+                        <div class="subtitle"> I worked as an agent in LandMark Group (Homebox branch), My job was a Customer Service agent.
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="portfolio-item">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio7.jpg)"></div>
+
+                    <div class="img-text">
+                        <div class="subtitle">Now I am making my way to be a Front-end Developer. 
+                        </div>
+                    </div>
+                </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)"></div>
+        
+                        <div class="img-text">
+                            <div class="subtitle"> I Started B.tech CSE at Jamia Hamdard in 2018.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio9.jpg)"></div>
+        
+                        <div class="img-text">
+                            <div class="subtitle"> I am working as a public relations officer at error-software development.
+                            </div>
+                        </div>
+                    </div>
+                    
+                 </div>
+              </div>
+          </div>
+      </div>
+
+    </body>
+
+    <script>
+         const portfolioItems = document.querySelectorAll('.portfolio-item')
+
+         portfolioItems.forEach(portfolioItem => {
+             portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+             })
+
+             portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+             })
+         })
+    </script>
+</html>
